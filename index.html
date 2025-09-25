@@ -8,38 +8,108 @@
 </head>
 <body>
   <!-- Navbar -->
- <nav class="navbar">
-  <div class="logo">OpenCause</div>
-  <div class="hamburger" id="hamburger">
-    &#9776; <!-- hamburger icon -->
-  </div>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <nav class="navbar">
+    <div class="logo">OpenCause</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#ngo-search">NGOs</a></li>
+      <li><a href="#donate">Donate</a></li>
+      <li><a href="#volunteer">Volunteer</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Main Content -->
- <section id="home" class="hero">
-  <div class="hero-content">
-    <h1>Welcome to OpenCause</h1>
-    <p>Connecting NGOs, donors, and students to make a real impact.</p>
-    <a href="#ngo-search" class="cta-button">Explore NGOs</a>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to OpenCause</h1>
+      <p>Connecting NGOs, donors, and students to make a real impact.</p>
+      <a href="#ngo-search" class="cta-button">Explore NGOs</a>
+    </div>
+  </section>
 
+  <!-- NGO Search Section -->
+  <section id="ngo-search">
+    <h2>Find Government-Certified NGOs</h2>
+    <p>Search and connect with NGOs that are making a real impact.</p>
+
+    <!-- Search Bar -->
+    <input type="text" id="ngo-search-input" placeholder="Search NGOs by name or focus..." />
+
+    <div class="ngo-container" id="ngo-container">
+      <!-- NGO Card 1 -->
+      <div class="ngo-card">
+        <h3>Helping Hands</h3>
+        <p>Focus: Education & Skill Development</p>
+        <p>Location: Mumbai, India</p>
+        <a href="#">View Profile</a>
+      </div>
+
+      <!-- NGO Card 2 -->
+      <div class="ngo-card">
+        <h3>Green Earth</h3>
+        <p>Focus: Environment & Sustainability</p>
+        <p>Location: Bangalore, India</p>
+        <a href="#">View Profile</a>
+      </div>
+
+      <!-- NGO Card 3 -->
+      <div class="ngo-card">
+        <h3>Food for All</h3>
+        <p>Focus: Hunger & Food Distribution</p>
+        <p>Location: Delhi, India</p>
+        <a href="#">View Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate Section -->
+  <section id="donate">
+    <h2>Support NGOs with Donations</h2>
+    <p>Choose how you want to contribute: money, goods, or food.</p>
+
+    <div class="donation-container">
+      <!-- Money Donation -->
+      <div class="donation-card">
+        <h3>Money Donation</h3>
+        <p>Provide financial support to NGOs to help them operate effectively.</p>
+        <input type="number" placeholder="Enter amount (₹)" min="1">
+        <button>Donate Money</button>
+      </div>
+
+      <!-- Goods Donation -->
+      <div class="donation-card">
+        <h3>Goods Donation</h3>
+        <p>Donate items such as clothes, books, or equipment to NGOs.</p>
+        <input type="text" placeholder="Enter goods description">
+        <button>Donate Goods</button>
+      </div>
+
+      <!-- Food Donation -->
+      <div class="donation-card">
+        <h3>Food Donation</h3>
+        <p>Provide food items to help feed those in need.</p>
+        <input type="text" placeholder="Enter food items">
+        <button>Donate Food</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer / Internship Section -->
+  <section id="volunteer">
+    <h2>Volunteer / Internships</h2>
+    <p>Students can apply for internships and volunteer opportunities.</p>
+  </section>
+
+  <!-- About Section -->
   <section id="about">
     <h2>About</h2>
     <p>Tell visitors about yourself or your project here.</p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Showcase your work or links here.</p>
-  </section>
-
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: your@email.com</p>
@@ -47,5 +117,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>

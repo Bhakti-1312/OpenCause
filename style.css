@@ -50,14 +50,12 @@
   animation-delay: 0.8s;
 }
 
-/* Keyframes */
 @keyframes fadeSlideUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 
 /* General Styles */
 body {
@@ -66,7 +64,6 @@ body {
   padding: 0;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -112,11 +109,11 @@ html {
 
 /* Sections - Full-screen on desktop */
 section {
-  height: 100vh; /* full viewport height */
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
@@ -163,9 +160,162 @@ section:nth-child(odd) {
     display: flex;
   }
 
-  /* Sections - auto height on mobile */
   section {
     height: auto;
     padding: 40px 20px;
+  }
+}
+
+/* NGO Search Section */
+#ngo-search {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#ngo-search h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#ngo-search p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+#ngo-search input {
+  padding: 12px 15px;
+  width: 50%;
+  max-width: 400px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+
+#ngo-search input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* NGO Cards */
+.ngo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ngo-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ngo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.ngo-card h3 {
+  margin-top: 0;
+}
+
+.ngo-card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.ngo-card a:hover {
+  background-color: #0056b3;
+}
+
+/* Donation Section */
+#donate {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+#donate h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#donate p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.donation-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.donation-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.donation-card input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.donation-card button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.donation-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ngo-container, .donation-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ngo-card, .donation-card {
+    width: 80%;
+  }
+
+  #ngo-search input {
+    width: 80%;
   }
 }
