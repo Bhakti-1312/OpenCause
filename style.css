@@ -1,10 +1,16 @@
-/* Navbar Styles */
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -14,6 +20,7 @@ body {
   color: white;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .navbar .logo {
@@ -42,15 +49,27 @@ body {
   text-decoration: underline;
 }
 
-/* Sections */
+/* Sections - Full-screen on desktop */
 section {
-  padding: 50px 20px;
+  height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  padding: 20px;
+  box-sizing: border-box;
   text-align: center;
 }
 
+/* Alternate section colors */
 section:nth-child(even) {
   background-color: #f4f4f4;
 }
+
+section:nth-child(odd) {
+  background-color: #ffffff;
+}
+
 /* Hamburger menu - hide on desktop */
 .hamburger {
   display: none;
@@ -81,5 +100,11 @@ section:nth-child(even) {
 
   .nav-links.active {
     display: flex;
+  }
+
+  /* Sections - auto height on mobile */
+  section {
+    height: auto;
+    padding: 40px 20px;
   }
 }
