@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenCause</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">OpenCause</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#ngo-search">NGOs</a></li>
+      <li><a href="#donate">Donate</a></li>
+      <li><a href="#volunteer">Volunteer</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to OpenCause</h1>
+      <p>Connecting NGOs, donors, and students to make a real impact.</p>
+      <a href="#ngo-search" class="cta-button">Explore NGOs</a>
+    </div>
+  </section>
+
+  <!-- Signup / Login Section -->
+<section id="auth" class="auth-section">
+  <div class="auth-container">
+
+    <!-- Signup Card -->
+    <div class="auth-card">
+      <h2>Sign Up</h2>
+      <input type="text" id="signup-name" placeholder="Name">
+      <input type="email" id="signup-email" placeholder="Email">
+      <input type="password" id="signup-password" placeholder="Password">
+      <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <!-- Login Card -->
+    <div class="auth-card">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email">
+      <input type="password" id="login-password" placeholder="Password">
+      <button id="login-btn">Login</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- NGO Search Section -->
+  <section id="ngo-search">
+    <h2>Find Government-Certified NGOs</h2>
+    <p>Search and connect with NGOs that are making a real impact.</p>
+
+    <!-- Search Bar -->
+    <input type="text" id="ngo-search-input" placeholder="Search NGOs by name or focus..." />
+
+    <div class="ngo-container" id="ngo-container">
+      <!-- NGO Card 1 -->
+      <div class="ngo-card">
+        <h3>Helping Hands</h3>
+        <p>Focus: Education & Skill Development</p>
+        <p>Location: Mumbai, India</p>
+        <a href="#">View Profile</a>
+      </div>
+
+      <!-- NGO Card 2 -->
+      <div class="ngo-card">
+        <h3>Green Earth</h3>
+        <p>Focus: Environment & Sustainability</p>
+        <p>Location: Bangalore, India</p>
+        <a href="#">View Profile</a>
+      </div>
+
+      <!-- NGO Card 3 -->
+      <div class="ngo-card">
+        <h3>Food for All</h3>
+        <p>Focus: Hunger & Food Distribution</p>
+        <p>Location: Delhi, India</p>
+        <a href="#">View Profile</a>
+      </div>
+    </div>
+  </section>
+  
+<!-- Donate Section -->
+<section id="donate" class="donate-section">
+  <h2>Support NGOs with Donations</h2>
+  <p>Choose an NGO and enter the amount you want to donate:</p>
+
+  <div class="donation-container" id="donation-container">
+    <!-- Dynamic NGO donation cards will be inserted here by JavaScript -->
+  </div>
+</section>
+
+
+  <!-- Volunteer / Internship Section -->
+  <section id="volunteer">
+    <h2>Volunteer / Internships</h2>
+    <p>Students can apply for internships and volunteer opportunities.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <p>Tell visitors about yourself or your project here.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="api.js"></script>
+
+</body>
+</html>

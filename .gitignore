@@ -1,0 +1,9 @@
+# Node dependencies
+OpenCause-backend/node_modules
+OpenCause/node_modules
+
+# Env files
+OpenCause-backend/.env
+
+# Logs
+*.log
